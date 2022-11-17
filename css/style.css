@@ -1,0 +1,534 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+ }
+
+ body{
+    font-family: 'Dancing Script', cursive;
+ }
+.header{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+ .logo{ 
+    font-size: 100px;
+    color:black;
+    text-align: center;
+}
+h2{
+   text-align: center;
+   margin-top: 50px;
+   font-size: 2rem;
+}
+
+.slider-frame{
+   width: 1280px;
+   height: auto;
+   margin: 50px auto 0;
+   overflow: hidden;
+
+   animation: slide 2s infinite alternate ease-in-out;
+}
+.slider-frame ul{
+   display: flex;
+   padding: 0;
+   width: 400%;
+}
+
+.slider-frame li{
+   list-style: none;
+   width: 100%;
+
+}
+.slider-frame img{
+   width: 90%;
+}
+.menu{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 60px;
+   font-size: 40px;
+   font-family: 'Dancing Script', cursive;
+}
+.link{
+   text-decoration: none;
+   margin-left: 34px;
+}
+div{
+   margin: 23px;
+   padding: 40px;
+   box-sizing: border-box;
+}
+h1{
+   justify-content: center;
+   text-align: center;
+   font-size: 100px;
+}
+p{
+   justify-content: center;
+   font-size: 33px;
+}
+.logo{
+ margin-top: 4rem;  
+}
+
+@keyframes slide{
+   0%{margin-left: 0%;}
+   20%{margin-left: 0%;}
+   
+   25%{margin-left: -100%;}
+   45%{margin-left: -100%;}
+
+   50%{margin-left: -200%;}
+   70%{margin-left: -200%;}
+ 
+   75%{margin-left: -300%;}
+   95%{margin-left: -300%;}
+}
+
+.logo{
+   display: block;
+   margin: 3rem auto;
+   
+}
+.audio{
+   width: 0;
+   
+}
+
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+   max-width: 1000px;
+   position: relative;
+   margin: auto;
+ }
+ 
+ /* Hide the images by default */
+ .mySlides {
+   display: none;
+ }
+ 
+ /* Next & previous buttons */
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+ 
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+ 
+ /* Caption text */
+ .text {
+   color: #f2f2f2;
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+ }
+ 
+ /* Number text (1/3 etc) */
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+ 
+ /* The dots/bullets/indicators */
+ .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+ 
+ .active, .dot:hover {
+   background-color: #717171;
+ }
+ 
+ /* Fading animation */
+ .fade {
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+ 
+ @keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+ .parrafo_index{
+   padding: 2rem;
+ }
+ /*Gallery*/
+ @import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #fafafa;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+/*Footer*/
+footer{
+   background: rgb(116, 25, 221);
+   height: auto;
+   width: 100%;
+   padding-top: 40px;
+   color: #fff;
+   
+}
+.footer-content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+}
+.footer-content h3{
+   font-size: 2.1rem;
+   font-weight: 500;
+   text-transform: capitalize;
+   line-height: 3rem;
+}
+.footer-content p{
+   max-width: 500px;
+   margin: 10px auto;
+   line-height: 28px;
+   font-size: 14px;
+   color: #cacdd2;
+}
+.socials{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem 0 3rem 0;
+}
+.socials li{
+   margin: 0 10px;
+}
+.socials a{
+   text-decoration: none;
+   color: #fff;
+   border: 1.1px solid white;
+   padding: 5px;
+
+   border-radius: 50%;
+
+}
+.socials a i{
+   font-size: 1.1rem;
+   width: 20px;
+
+
+   transition: color .4s ease;
+
+}
+.socials a:hover i{
+   color: aqua;
+}
+
+.footer-bottom{
+   background: rgb(255, 251, 251);
+   width: 100%;
+   padding: 20px;
+padding-bottom: 40px;
+   text-align: center;
+}
+.footer-bottom p{
+float: left;
+   font-size: 14px;
+   word-spacing: 2px;
+   text-transform: capitalize;
+}
+.footer-bottom p a{
+ color:#44bae8;
+ font-size: 16px;
+ text-decoration: none;
+}
+.footer-bottom span{
+   text-transform: uppercase;
+   opacity: .4;
+   font-weight: 200;
+}
+.footer-menu{
+ float: right;
+
+}
+.footer-menu ul{
+ display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+ color: #cfd2d6;
+ text-decoration: none;
+}
+.footer-menu ul li a:hover{
+ color: #27bcda;
+}
+
+@media (max-width:500px) {
+.footer-menu ul{
+ display: flex;
+ margin-top: 10px;
+ margin-bottom: 20px;
+ }
+}
+
+
+
+
+
+
+
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+       section {
+           padding: 60px 0;
+           min-height: 100vh;
+       }
+span, a, a:hover {
+   display: inline-block;
+   text-decoration: none;
+   color: inherit;
+}
+
+.blog img{
+   max-width: 100%;
+}
+.blog-head {
+ margin-bottom: 70px;
+}
+
+.blog-head h6{
+ color: #f05907;
+ position: relative;
+ display: inline-block;
+ text-transform: capitalize;
+}
+
+.blog-head h6:after, .blog-head h6:before{
+ position: absolute;
+ content: "";
+ width: 50px;
+ height: 3px;
+ background: #f05907;
+ top: 50%;
+}
+
+.blog-head h6:after{
+ right: 120%;
+}
+
+.blog-head h6:before{
+ left: 120%;
+}
+
+
+.overlay {
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   background-color: rgba(228, 116, 185, 0.63);
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+   transition: .5s ease;
+}
+
+.item {
+   position: relative;
+   overflow: hidden;
+   margin: 20px 0;
+}
+
+.item:hover .overlay {
+ bottom: 0;
+ height: 100%;
+ width: 100%;
+}
+
+.top-overlay {
+   bottom: 100%;    
+   height: 0;
+}
+.item:hover .top-overlay {
+ bottom: 0;
+}
+.bottom-overlay {
+   top: 100%;
+}
+
+.item:hover .bottom-overlay {
+ top: 0;
+}
+
+.right-overlay {
+   left: 100%;
+   height: 100%;
+}
+
+.item:hover .right-overlay {
+ left : 0;
+}
+
+.left-overlay {
+   right: 100%;
+   height: 100%;
+   left:auto;
+}
+
+.item:hover .left-overlay {
+ right : 0;
+}
+.fade-overlay {
+   height: 100%;
+   opacity: 0;
+}
+
+.item:hover .fade-overlay {
+ opacity: 1;
+}
+.title-overlay {
+   height: auto;
+   top: auto;
+   opacity: 0;
+}
+.item:hover .title-overlay {
+   opacity: 1;
+   height: auto;
+   padding: 50px 0;
+}
+.text {
+   color: white;
+   font-size: 1.2vw;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
